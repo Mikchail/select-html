@@ -1,0 +1,74 @@
+.app {
+  display: flex;
+  justify-content: center;
+  padding-top: 4rem;
+}
+
+.wrap {
+  max-width: 500px;
+  width: 100%;
+}
+
+.select {
+  width: 100%;
+  position: relative;
+  z-index: 99;
+}
+.select.open .select__dropdown {
+  display: block;
+}
+.select.open .select__input {
+  border-bottom: none;
+}
+.select.open .select__backdrop {
+  display: block;
+}
+.select__backdrop {
+  position: fixed;
+  z-index: -1;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.select__input {
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 5px;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+.select__dropdown {
+  display: none;
+  position: absolute;
+  border: 1px solid;
+  border-radius: 5px;
+  top: 47px;
+  right: 0;
+  left: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 2px 3px 1px rgba(0, 0, 0, 0.4);
+}
+.select__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.select__item {
+  padding: 1rem;
+  border: 1px solid #cccccc;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.select__item.selected {
+  background-color: #eee321;
+}
+.select__item:hover {
+  background-color: #eeeeee;
+}
+
+/*# sourceMappingURL=/selectorjs.e31bb0bc.css.map */
